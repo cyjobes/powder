@@ -1,0 +1,27 @@
+Token
+bcfa7d13u7rcj47xqand8r7ai
+
+
+Key
+56c1bvqdb4w78cp8npfehguzeehb3bobt2jp2c30at5u5td12x
+
+
+NC Lottery web dev
+jeffrey.zehner@lotterync.net
+
+
+
+CREATE TABLE IF NOT EXISTS `power_lotto`.`megamillions_draws` (
+  `id` INT NOT NULL AUTO_INCREMENT,
+  `draw_date` VARCHAR(45) NOT NULL,
+  `ball1` VARCHAR(2) NOT NULL,
+  `ball2` VARCHAR(2) NOT NULL,
+  `ball3` VARCHAR(2) NOT NULL,
+  `ball4` VARCHAR(2) NOT NULL,
+  `ball5` VARCHAR(2) NOT NULL,
+  `mega_ball` VARCHAR(2) NOT NULL,
+  `multiplier` VARCHAR(2) NOT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE INDEX `id_UNIQUE` (`id` ASC),
+  UNIQUE INDEX `draw_date_UNIQUE` (`draw_date` ASC))
+ENGINE = InnoDB
